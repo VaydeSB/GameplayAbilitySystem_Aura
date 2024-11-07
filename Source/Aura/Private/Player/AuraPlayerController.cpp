@@ -1,7 +1,7 @@
 // Copyright Lone Pack Studio [2024]
 
 
-#include "AuraPlayerController.h"
+#include "Player/AuraPlayerController.h"
 
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
@@ -82,7 +82,6 @@ void AAuraPlayerController::CursorTrace()
 void AAuraPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-
 	check(AuraContext);
 
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(GetLocalPlayer());
